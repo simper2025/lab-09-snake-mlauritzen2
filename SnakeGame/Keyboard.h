@@ -5,6 +5,6 @@
 class Keyboard
 {
 public:
-	KeyCommand lastInput();
+	KeyCommand lastInput(KeyCommand keypress);
 };
 

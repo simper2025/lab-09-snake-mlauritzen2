@@ -4,8 +4,13 @@
 #include "point.h"
 class mouse
 {
+private:
+	point loc;
+	point value;
+
 public:
 	point move();
-	void draw(point value);
+	void setValue();
+	void draw();
 };
 

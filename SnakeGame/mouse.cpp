@@ -4,13 +4,19 @@
 point mouse::move()
 {
 	srand(time(0));
-	point loc;
 	loc.x = rand() % 20;
 	loc.y = rand() % 20;
 	return loc;
 }
 
-void mouse::draw(point value)
+
+void mouse::setValue()
 {
-	Console::txtPlot(value, 69);
+	value = move();
+}
+
+void mouse::draw()
+{
+	Console::txtPlot(loc, 69);
+
 }
